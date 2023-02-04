@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <!-- Currently there can be issue with Serilog.Extensions.Logging if Microsoft.Extensions.Logging.Abstractions > 2.0.0
+       https://github.com/serilog/serilog-extensions-logging/issues/171 -->
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.0" />
+  </ItemGroup>
+ 
+</Project>
